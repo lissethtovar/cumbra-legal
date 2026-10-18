@@ -12,15 +12,14 @@
 
   <p class="marca">Cumbra Anestesia</p>
   <h1>Política de privacidad</h1>
-  <p class="vigencia">Vigente desde el 9 de agosto de 2026 · Última actualización: 24 de agosto de 2026</p>
+  <p class="vigencia">Versión 10 · Fecha de esta versión: 17 de octubre de 2026</p>
 
   <p>Cumbra Anestesia es una aplicación de estudio para profesionales de la salud. Esta política
   explica qué datos recoge, para qué los usa, con quién los comparte y cómo puedes eliminarlos.
   Está escrita para que se entienda leyéndola una vez.</p>
 
   <h2>Quién trata tus datos</h2>
-  <p>El responsable del tratamiento es <strong>Andamia SpA</strong>, RUT 78.480.912-9, con
-  domicilio en Saturnino Epulef 955, Depto 706b, Villarrica, Región de La Araucanía, Chile.
+  <p>El responsable del tratamiento es <strong>Andamia SpA</strong>, Chile.
   Andamia SpA desarrolla y publica Cumbra. Para cualquier asunto relacionado con esta política
   o con tus datos, escribe a <a href="mailto:soporte@andamia.io">soporte@andamia.io</a>.</p>
 
@@ -61,17 +60,42 @@
         <td>Al iniciar sesión, nuestro proveedor de cuentas guarda la dirección IP, el tipo de
         dispositivo y navegador y la fecha y hora del acceso. Sirve para mantener tu sesión
         abierta, detectar accesos indebidos y diagnosticar fallos. No los usamos para perfilarte
-        ni los cruzamos con tu actividad de estudio, y se eliminan junto con el resto de tus
-        datos cuando borras la cuenta.</td>
+        ni los cruzamos con tu actividad de estudio. Nuestro proveedor de cuentas los conserva
+        durante un tiempo limitado y los rota por su cuenta; no los consultamos salvo para
+        investigar un problema de seguridad.</td>
+      </tr>
+      <tr>
+        <td>Analítica de uso de la aplicación</td>
+        <td>Qué pantallas abres y cuándo, y cuatro sucesos de uso: que respondes una pregunta
+        —si acertaste, cuánto tardaste y qué confianza declaraste, <strong>nunca de qué pregunta
+        se trata</strong>—, y que descargas, sincronizas o caduca un paquete de estudio sin
+        conexión. Sirve para ver por dónde se atasca la gente y arreglarlo. Esta información va
+        a <strong>PostHog</strong>, una herramienta de analítica de producto, asociada a tu
+        identificador de cuenta. Antes de que inicies sesión no hay cuenta a la que asociarla,
+        así que se usa un <strong>identificador aleatorio que queda guardado en tu
+        dispositivo</strong>: no lleva tu nombre, pero identifica a ese teléfono de forma
+        persistente. En cuanto entras, esa actividad pasa a quedar asociada a tu cuenta. Su SDK añade además datos técnicos del dispositivo: modelo,
+        versión del sistema, versión y número de compilación de la aplicación, tamaño de
+        pantalla, idioma y zona horaria. PostHog recibe la <strong>dirección IP</strong>
+        desde la que te conectas, porque es el servicio al que tu teléfono envía esos datos.
+        <strong>Puede conservarla junto al suceso y derivar de ella un país y una ciudad
+        aproximados.</strong> No usamos esa ubicación para nada distinto de saber desde qué
+        países se usa la aplicación, y la aplicación <strong>no accede al GPS de tu
+        teléfono</strong>.</td>
       </tr>
     </tbody>
   </table>
 
   <div class="tarjeta">
     <p><strong>Lo que no hacemos.</strong> La aplicación no muestra publicidad, no te rastrea
-    entre aplicaciones ni sitios web, no usa herramientas de analítica de terceros, no recoge tu
-    ubicación, no accede a tus contactos, a tu cámara ni a tus fotos, y no vende ni cede tus
-    datos a nadie con fines comerciales.</p>
+    entre aplicaciones ni sitios web, no accede a tu ubicación precisa ni al GPS de tu
+    teléfono, no accede a tus contactos, a tu cámara ni a tus fotos, y no vende ni cede tus datos a nadie con fines comerciales.</p>
+    <p><strong>Sobre la analítica.</strong> Usamos PostHog para entender cómo se usa la
+    aplicación, y solo para eso. No grabamos tu pantalla ni tus gestos, no registramos el
+    contenido de las preguntas que ves ni de las respuestas que eliges, y no cruzamos esa
+    información con la de otras aplicaciones o sitios web ni la entregamos a intermediarios de
+    datos. Por eso la aplicación no te pide permiso de seguimiento: lo que Apple llama
+    «seguimiento» es justamente eso que no hacemos.</p>
   </div>
 
   <h2>Por qué podemos tratarlos</h2>
@@ -84,11 +108,14 @@
   junto con el resto de tu perfil.</p>
 
   <h2>Con quién se comparten</h2>
-  <p>Con dos proveedores que actúan por cuenta nuestra y solo para que la aplicación funcione:</p>
+  <p>Con tres proveedores que actúan por cuenta nuestra y solo para que la aplicación
+  funcione:</p>
   <ul>
     <li><strong>Supabase</strong> — alojamiento de la base de datos y del sistema de cuentas.
     Ahí viven tu correo y tu progreso.</li>
     <li><strong>Expo</strong> — envío de las notificaciones, si las has aceptado.</li>
+    <li><strong>PostHog</strong> — analítica de uso de la aplicación, con los datos descritos
+    arriba.</li>
   </ul>
   <p>Ninguno de ellos usa tus datos para sus propios fines: los tratan solo por cuenta nuestra,
   bajo un contrato de tratamiento de datos que les obliga a seguir nuestras instrucciones, a
@@ -100,7 +127,8 @@
   <strong>São Paulo, Brasil</strong>. La transmisión va cifrada y el acceso está restringido:
   cada persona solo puede leer y escribir sus propios datos.</p>
   <p>Esto significa que, si no resides en Brasil, tus datos se tratan fuera de tu país. Además,
-  las empresas que nos prestan estos servicios —Supabase y Expo— están establecidas en Estados
+  las empresas que nos prestan estos servicios —Supabase, Expo y PostHog— están establecidas
+  en Estados Unidos, y la analítica se envía además a servidores de PostHog situados en Estados
   Unidos, por lo que su personal técnico puede acceder a la información desde allí. Si resides
   en la Unión Europea o en el Reino Unido, ni Brasil ni Estados Unidos cuentan con una decisión
   general de adecuación, y estas transferencias se apoyan en las cláusulas contractuales tipo
@@ -109,20 +137,41 @@
   <a href="mailto:soporte@andamia.io">soporte@andamia.io</a>.</p>
 
   <h2>Cuánto tiempo se conservan</h2>
-  <p>Mientras tengas la cuenta abierta. Cuando la eliminas, se borran de nuestros sistemas activos.</p>
+  <p>Depende de dónde estén, y son tres sitios distintos:</p>
+  <ul>
+    <li><strong>La base de datos</strong> —tu correo, tu progreso y tus respuestas—: mientras
+    tengas la cuenta abierta. Al eliminarla, se pide su supresión.</li>
+    <li><strong>Los respaldos de seguridad cifrados</strong> de nuestro proveedor: pueden
+    contener restos durante un periodo breve, hasta que se sobrescriben en su ciclo normal de
+    rotación. No son consultables desde la aplicación.</li>
+    <li><strong>La analítica de uso en PostHog</strong>: se conserva durante el periodo de
+    retención que fija el plan contratado con esa herramienta, <strong>aunque elimines la
+    cuenta</strong>, salvo que nos pidas borrarla. Es la única parte que no desaparece sola, y por eso lo decimos aquí
+    y no en letra pequeña.</li>
+  </ul>
 
   <h2>Cómo eliminar tu cuenta y tus datos</h2>
   <div class="tarjeta">
     <p>Desde la aplicación: <strong>Perfil → Eliminar cuenta</strong>.</p>
-    <p>Esa acción borra tus respuestas, tu perfil y tus credenciales de acceso. Es irreversible:
-    no conservamos ninguna copia consultable para devolvértela después. El borrado surte efecto
-    de inmediato y desde ese momento tus datos dejan de estar accesibles en la aplicación; los
-    respaldos de seguridad cifrados que mantiene nuestro proveedor pueden contener restos
-    durante un periodo breve, hasta que se sobrescriben en su ciclo normal de rotación.</p>
+    <p>Es irreversible: no guardamos una copia de tu progreso para devolvértela después. Esto
+    es lo que hace esa acción:</p>
+    <ul>
+      <li>La aplicación <strong>solicita la eliminación</strong> de tu perfil, tus respuestas y
+      tus credenciales de acceso de la base de datos.</li>
+      <li><strong>Pueden quedar restos</strong> en los respaldos cifrados de nuestro proveedor
+      durante un periodo breve, hasta que se sobrescriben solos.</li>
+      <li><strong>No se borra sola la analítica de uso</strong> ya recibida en PostHog, que está
+      asociada a tu identificador de cuenta. <strong>Puedes pedirnos que la eliminemos</strong>
+      escribiendo a <a href="mailto:soporte@andamia.io">soporte@andamia.io</a>: es uno de los
+      derechos que tienes más abajo, y te responderemos en el plazo que allí se indica.</li>
+    </ul>
+    <p>Lo decimos así de claro porque la alternativa sería prometerte un borrado total que hoy
+    no podemos cumplir de forma automática.</p>
   </div>
   <p>Si no puedes acceder a la aplicación, escribe a
   <a href="mailto:soporte@andamia.io">soporte@andamia.io</a> desde el correo con el que te
-  registraste y la eliminamos.</p>
+  registraste y tramitaremos la eliminación, con el mismo alcance y el mismo plazo de respuesta
+  que si la pidieras desde la aplicación.</p>
 
   <h2>Tus derechos</h2>
   <p>Puedes pedirnos acceso a tus datos, su rectificación, su supresión, la limitación de su
