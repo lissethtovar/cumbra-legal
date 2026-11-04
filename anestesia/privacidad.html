@@ -12,7 +12,8 @@
 
   <p class="marca">Cumbra Anestesia</p>
   <h1>Política de privacidad</h1>
-  <p class="vigencia">Versión 10 · Fecha de esta versión: 17 de octubre de 2026</p>
+  <p class="vigencia">Versión 11 · Borrador del 4 de noviembre de 2026 · No publicado ni aceptado</p>
+  <p><strong>Borrador sujeto a revisión de Claude y aceptación de Andamia. No sustituye la versión 10 publicada.</strong></p>
 
   <p>Cumbra Anestesia es una aplicación de estudio para profesionales de la salud. Esta política
   explica qué datos recoge, para qué los usa, con quién los comparte y cómo puedes eliminarlos.
@@ -32,6 +33,15 @@
       <tr><th>Dato</th><th>Para qué</th></tr>
     </thead>
     <tbody>
+      <tr>
+        <td>Identificador de cuenta e historial de compras y suscripción</td>
+        <td>Vincular tu acceso a tu cuenta de Cumbra, comprobar si tienes Pro o una prueba activa,
+        restaurar compras y gestionar vencimientos. RevenueCat recibe el identificador de tu
+        cuenta, recibos y datos de transacción, producto, fechas y estado de suscripción, además
+        de datos técnicos necesarios para prestar ese servicio. Apple procesa el pago; Cumbra
+        no recibe el número completo de tu tarjeta. No enviamos a RevenueCat tus respuestas
+        clínicas ni configuramos correo o nombre como atributos de compra.</td>
+      </tr>
       <tr>
         <td>Correo electrónico</td>
         <td>Crear tu cuenta, iniciar sesión y recuperar el acceso.</td>
@@ -106,20 +116,29 @@
   dejarás de recibirlas. Si además quieres que borremos el identificador guardado, escríbenos a
   <a href="mailto:soporte@andamia.io">soporte@andamia.io</a> o elimina tu cuenta, que lo borra
   junto con el resto de tu perfil.</p>
+  <p>Tratamos los datos de suscripción para ejecutar el servicio de acceso contratado y
+  atender su restauración y soporte. Los registros que deban conservarse para cumplir
+  obligaciones legales se tratan con esa finalidad. La prueba introductoria, si eres elegible,
+  y la compra se confirman en la hoja de pago de Apple; no son un consentimiento para
+  publicidad ni para seguimiento entre aplicaciones.</p>
 
   <h2>Con quién se comparten</h2>
-  <p>Con tres proveedores que actúan por cuenta nuestra y solo para que la aplicación
-  funcione:</p>
+  <p>Para prestar el servicio utilizamos estos proveedores:</p>
   <ul>
     <li><strong>Supabase</strong> — alojamiento de la base de datos y del sistema de cuentas.
     Ahí viven tu correo y tu progreso.</li>
     <li><strong>Expo</strong> — envío de las notificaciones, si las has aceptado.</li>
     <li><strong>PostHog</strong> — analítica de uso de la aplicación, con los datos descritos
     arriba.</li>
+    <li><strong>RevenueCat, Inc.</strong> — comprobación y restauración de compras y del acceso
+    Pro, con los datos de suscripción descritos arriba. Para los datos que trata por cuenta de
+    Andamia actúa como encargado, bajo las condiciones de tratamiento aplicables.</li>
   </ul>
-  <p>Ninguno de ellos usa tus datos para sus propios fines: los tratan solo por cuenta nuestra,
-  bajo un contrato de tratamiento de datos que les obliga a seguir nuestras instrucciones, a
-  mantener la confidencialidad y a aplicar medidas de seguridad. Fuera de estos casos, solo
+  <p>El tratamiento por cuenta de Andamia debe sujetarse a las instrucciones y garantías
+  contractuales aplicables. Esto no equivale a afirmar que todos los proveedores carezcan de
+  finalidades propias: sus políticas describen también sus tratamientos como responsables.
+  Apple gestiona el pago y los registros de su tienda conforme a sus propias condiciones.
+  Fuera de estos casos, solo
   revelaríamos información si nos lo exigiera una autoridad competente conforme a la ley.</p>
 
   <h2>Dónde se guardan y transferencias internacionales</h2>
@@ -127,7 +146,7 @@
   <strong>São Paulo, Brasil</strong>. La transmisión va cifrada y el acceso está restringido:
   cada persona solo puede leer y escribir sus propios datos.</p>
   <p>Esto significa que, si no resides en Brasil, tus datos se tratan fuera de tu país. Además,
-  las empresas que nos prestan estos servicios —Supabase, Expo y PostHog— están establecidas
+  las empresas que nos prestan estos servicios —Supabase, Expo, PostHog y RevenueCat— están establecidas
   en Estados Unidos, y la analítica se envía además a servidores de PostHog situados en Estados
   Unidos, por lo que su personal técnico puede acceder a la información desde allí. Si resides
   en la Unión Europea o en el Reino Unido, ni Brasil ni Estados Unidos cuentan con una decisión
@@ -135,10 +154,22 @@
   aprobadas por la Comisión Europea que esos proveedores incorporan a sus condiciones de
   tratamiento de datos. Si quieres más detalle sobre estas garantías, escríbenos a
   <a href="mailto:soporte@andamia.io">soporte@andamia.io</a>.</p>
+  <p>RevenueCat puede tratar datos de suscripción en Estados Unidos y mediante sus
+  subencargados. Sus condiciones de tratamiento incluyen mecanismos para transferencias
+  internacionales, incluidas cláusulas contractuales tipo cuando resulten aplicables.
+  <strong>Pendiente antes de publicar este borrador:</strong> acreditar la contraparte de
+  Andamia, las condiciones aceptadas y la configuración efectiva; esta redacción no acredita
+  por sí sola un contrato firmado ni una garantía jurídica suficiente para cada país.</p>
 
   <h2>Cuánto tiempo se conservan</h2>
-  <p>Depende de dónde estén, y son tres sitios distintos:</p>
+  <p>Depende del tipo de dato y del proveedor:</p>
   <ul>
+    <li><strong>Compras y suscripciones:</strong> pueden conservarse después de cerrar la
+    cuenta para restauración, soporte y obligaciones legales. Eliminar la cuenta de Cumbra
+    no borra automáticamente estos registros en Apple ni en RevenueCat. Puedes solicitar su
+    supresión a Andamia; explicaremos las retenciones legalmente necesarias.
+    <strong>Pendiente antes de publicar:</strong> confirmar y documentar los plazos efectivos
+    y el procedimiento de atención con RevenueCat, sin prometer una cifra no verificada.</li>
     <li><strong>La base de datos</strong> —tu correo, tu progreso y tus respuestas—: mientras
     tengas la cuenta abierta. Al eliminarla, se pide su supresión.</li>
     <li><strong>Los respaldos de seguridad cifrados</strong> de nuestro proveedor: pueden
@@ -146,13 +177,16 @@
     rotación. No son consultables desde la aplicación.</li>
     <li><strong>La analítica de uso en PostHog</strong>: se conserva durante el periodo de
     retención que fija el plan contratado con esa herramienta, <strong>aunque elimines la
-    cuenta</strong>, salvo que nos pidas borrarla. Es la única parte que no desaparece sola, y por eso lo decimos aquí
-    y no en letra pequeña.</li>
+    cuenta</strong>, salvo que nos pidas borrarla. Esta retención no se interrumpe
+    automáticamente al eliminar tu cuenta.</li>
   </ul>
 
   <h2>Cómo eliminar tu cuenta y tus datos</h2>
   <div class="tarjeta">
     <p>Desde la aplicación: <strong>Perfil → Eliminar cuenta</strong>.</p>
+    <p><strong>Eliminar tu cuenta no cancela tu suscripción de Apple.</strong> Cancélala en
+    Ajustes → Apple ID → Suscripciones. La solicitud de eliminación de datos no equivale a
+    una cancelación ni a un reembolso de la tienda.</p>
     <p>Es irreversible: no guardamos una copia de tu progreso para devolvértela después. Esto
     es lo que hace esa acción:</p>
     <ul>
@@ -164,6 +198,9 @@
       asociada a tu identificador de cuenta. <strong>Puedes pedirnos que la eliminemos</strong>
       escribiendo a <a href="mailto:soporte@andamia.io">soporte@andamia.io</a>: es uno de los
       derechos que tienes más abajo, y te responderemos en el plazo que allí se indica.</li>
+      <li>Los registros de compra en Apple y RevenueCat no se eliminan automáticamente con
+      esta acción. Puedes solicitar a Andamia la supresión de los datos de suscripción, con
+      los límites y plazos indicados en la sección de conservación.</li>
     </ul>
     <p>Lo decimos así de claro porque la alternativa sería prometerte un borrado total que hoy
     no podemos cumplir de forma automática.</p>
